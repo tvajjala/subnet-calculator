@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'com.codergists'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation "com.oracle.oci.sdk:oci-java-sdk-core:2.11.1"
+    implementation "com.oracle.oci.sdk:oci-java-sdk-secrets:2.11.1"
+    implementation group: 'com.github.seancfoley', name: 'ipaddress', version: '2.0.1'
+
+    implementation "commons-io:commons-io:2.11.0"
+    implementation "org.apache.logging.log4j:log4j-core:2.19.0"
+    implementation "org.apache.logging.log4j:log4j-api:2.19.0"
+    implementation "org.apache.logging.log4j:log4j-slf4j-impl:2.19.0"
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitJupiterVersion}"
+    testImplementation "org.mockito:mockito-junit-jupiter:${mockitoJupiterVersion}"
+    testImplementation "org.mockito:mockito-inline:${mockitoJupiterVersion}" // for static method mocking
+
+}
+
+test {
+    useJUnitPlatform()
+}
