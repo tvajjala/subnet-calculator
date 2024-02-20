@@ -11,8 +11,8 @@ repositories {
 
 dependencies {
 
-    implementation "com.oracle.oci.sdk:oci-java-sdk-core:2.11.1"
-    implementation "com.oracle.oci.sdk:oci-java-sdk-secrets:2.11.1"
+    implementation "com.oracle.oci.sdk:oci-java-sdk-core:2.60.0"
+    implementation "com.oracle.oci.sdk:oci-java-sdk-secrets:2.60.0"
     implementation group: 'com.github.seancfoley', name: 'ipaddress', version: '2.0.1'
 
     implementation "commons-io:commons-io:2.11.0"

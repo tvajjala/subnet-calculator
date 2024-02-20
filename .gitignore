@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 
+.DS_Store
+build/
+*/.DS_Store
+.gradle
 # Log file
 *.log
 
